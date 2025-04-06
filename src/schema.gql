@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateSchoolDto {
+  address: String!
+  name: String!
+}
+
+input CreateTeacherDto {
+  name: String!
+  schoolId: Int!
+  subject: String!
+}
+
+type Mutation {
+  createSchool(input: CreateSchoolDto!): School!
+  createTeacher(input: CreateTeacherDto!): Teacher!
+}
+
+type Query {
+  hello: String!
+  school(id: Int!): School
+  schools: [School!]!
+  teacher(id: Int!): Teacher
+  teachers: [Teacher!]!
+}
+
+type School {
+  address: String!
+  id: ID!
+  name: String!
+}
+
+type Teacher {
+  id: ID!
+  name: String!
+  schoolId: Int!
+  subject: String!
+}
