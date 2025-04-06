@@ -8,31 +8,31 @@ export class TeachersService {
   private teachers: Teacher[] = [
     {
       id: 1,
-      name: 'John Doe',
+      name: 'maged',
       subject: 'Mathematics',
       schoolId: 1,
     },
     {
       id: 2,
-      name: 'Jane Smith',
+      name: 'mohamed',
       subject: 'Physics',
       schoolId: 2,
     },
     {
       id: 3,
-      name: 'Emily Johnson',
+      name: 'ahmed',
       subject: 'Chemistry',
       schoolId: 3,
     },
     {
       id: 4,
-      name: 'Michael Brown',
+      name: 'ali',
       subject: 'Biology',
       schoolId: 4,
     },
     {
       id: 5,
-      name: 'Sarah Davis',
+      name: 'bassem',
       subject: 'History',
       schoolId: 1,
     },

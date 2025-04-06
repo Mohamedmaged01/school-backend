@@ -9,28 +9,28 @@ export class SchoolsService {
   private schools: School[] = [
     {
       id: 1,
-      name: 'Springfield Elementary',
-      address: '123 Main St, Springfield',
+      name: 'Cairo  School',
+      address: 'Cairo',
     },
     {
       id: 2,
-      name: 'Shelbyville High School',
-      address: '456 Elm St, Shelbyville',
+      name: 'Alexandria  School',
+      address: ' Alexandria',
     },
     {
       id: 3,
-      name: 'Ogdenville Community College',
-      address: '789 Oak St, Ogdenville',
+      name: 'Giza  school',
+      address: ' Giza',
     },
     {
       id: 4,
-      name: 'North Haverbrook Academy',
-      address: '321 Maple St, North Haverbrook',
+      name: 'Luxor school',
+      address: ' Luxor',
     },
     {
       id: 5,
-      name: 'Capital City University',
-      address: '654 Pine St, Capital City',
+      name: 'Aswan school',
+      address: ' Aswan',
     },
   ];
   private nextId = this.schools.length + 1;
