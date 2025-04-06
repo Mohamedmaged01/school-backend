@@ -33,7 +33,7 @@ export class SchoolsService {
       address: '654 Pine St, Capital City',
     },
   ];
-  private nextId = 1;
+  private nextId = this.schools.length + 1;
 
   constructor(private readonly teachersService: TeachersService) {}
 

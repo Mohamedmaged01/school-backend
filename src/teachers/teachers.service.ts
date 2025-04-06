@@ -37,7 +37,7 @@ export class TeachersService {
       schoolId: 1,
     },
   ];
-  private nextId = 1;
+  private nextId = this.teachers.length + 1;
 
   create(createTeacherDto: CreateTeacherDto): Teacher {
     const teacher: Teacher = {
@@ -76,13 +76,14 @@ export class TeachersService {
     return this.teachers[teacherIndex];
   }
 
-  remove(id: number): boolean {
+  remove(id: number): Teacher | null {
     const teacherIndex = this.teachers.findIndex(
       (teacher) => teacher.id === id,
     );
-    if (teacherIndex === -1) return false;
+    if (teacherIndex === -1) return null;
 
+    const teacher = this.teachers[teacherIndex];
     this.teachers.splice(teacherIndex, 1);
-    return true;
+    return teacher;
   }
 }
