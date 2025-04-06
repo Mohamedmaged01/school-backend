@@ -6,7 +6,33 @@ import { TeachersService } from '../teachers/teachers.service';
 
 @Injectable()
 export class SchoolsService {
-  private schools: School[] = [];
+  private schools: School[] = [
+    {
+      id: 1,
+      name: 'Springfield Elementary',
+      address: '123 Main St, Springfield',
+    },
+    {
+      id: 2,
+      name: 'Shelbyville High School',
+      address: '456 Elm St, Shelbyville',
+    },
+    {
+      id: 3,
+      name: 'Ogdenville Community College',
+      address: '789 Oak St, Ogdenville',
+    },
+    {
+      id: 4,
+      name: 'North Haverbrook Academy',
+      address: '321 Maple St, North Haverbrook',
+    },
+    {
+      id: 5,
+      name: 'Capital City University',
+      address: '654 Pine St, Capital City',
+    },
+  ];
   private nextId = 1;
 
   constructor(private readonly teachersService: TeachersService) {}
